@@ -9,7 +9,11 @@ async function shortUrl() {
   const url = apiUrl + userUrl;
 
   const response = await fetch(url);
-  const data = await response.json();
 
-  console.log(data);
+  const data = await response.json();
+  const short = data.result.full_short_link;
+
+  const link = document.getElementById("link-short");
+  link.href = short;
+  link.text = short;
 }
