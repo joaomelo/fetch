@@ -1,24 +1,25 @@
 <html>
   <head>
     <style>
-      a {
-        display: block;
-        margin-top: 16px;
-      }
-
-      #container {
+      .container {
         display: grid;
         place-items: center;
+      }
+
+      .m1 {
+        margin-top: 8px;
+      }
+
+      .m2 {
+        margin-top: 16px;
       }
     </style>
   </head>
   <body>
-    <div id="container">
-      <div>
-        <input id="input-long">
-        <button id="button-short">Short Url</button>
-      </div>
-      <a id="link-short" href="#" target="_blank"></a>
+    <div class="container">
+      <input id="input-long" />
+      <button id="button-short" class="m1">Short Url</button>
+      <a id="link-short" href="#" target="_blank" class="m2"></a>
     </div>
     <script type="module" src="/main.js"></script>
   </body>
